@@ -3,3 +3,5 @@ python-telegram-bot
 pyTelegramBotAPI
 certifi
 pytz
+flask
+aiogram
